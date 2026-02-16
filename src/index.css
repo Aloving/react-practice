@@ -1,0 +1,106 @@
+:root {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1a1a1a;
+  background-color: #f5f5f5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.app-header {
+  margin-bottom: 2rem;
+}
+
+.app-header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.75rem;
+}
+
+.app-header p {
+  margin: 0;
+  color: #555;
+}
+
+.app-header code {
+  background: #e8e8e8;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+}
+
+.task-item {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.task-item button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.25rem 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.task-item button:hover {
+  color: #0066cc;
+}
+
+.task-item button.active {
+  font-weight: 600;
+  color: #0066cc;
+}
+
+.task-id {
+  font-family: monospace;
+  color: #666;
+  font-size: 0.85em;
+}
+
+.task-level {
+  margin-left: auto;
+  font-size: 0.75rem;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.task-desc {
+  margin: 0.5rem 0 0;
+  padding-left: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.task-preview {
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
