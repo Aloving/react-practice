@@ -1,6 +1,6 @@
 # React Practice — Оптимизация
 
-Репозиторий для практики React с фокусом на **оптимизацию**: виртуализация, мемоизация, контексты, code splitting.
+Репозиторий для практики React с фокусом на **оптимизацию** и продвинутые темы: от базового useState до виртуализации, мемоизации, контекстов, code splitting и senior-паттернов.
 
 ## Стек
 
@@ -29,6 +29,14 @@ src/
     03-memo-selectors/
     04-context-splitting/
     05-code-splitting/
+    06-basic-counter/
+    07-basic-list/
+    08-form-validation/
+    09-timer-cleanup/
+    10-transition-deferred/
+    11-error-boundary-recovery/
+    12-use-sync-external-store/
+    13-compound-components/
   test/           # setup для Vitest
   App.tsx
   main.tsx
@@ -39,14 +47,22 @@ src/
 - **README.md** — условие, подсказки, критерии приёмки
 - Компонент(ы) для реализации (заглушки уже есть)
 
-## Задачи (5 штук, средний — продвинутый уровень)
+## Задачи (13 штук: базовый — senior)
 
 | № | Задача | Уровень |
 |---|--------|--------|
+| 06 | Счётчик с useState | базовый |
+| 07 | Список с добавлением и удалением | базовый |
+| 08 | Контролируемая форма с валидацией | средний |
+| 09 | Таймер с очисткой в useEffect | средний |
 | 01 | Виртуальный список (рендер только видимых + буфер) | средний |
 | 02 | Дебаунс поиска + AbortController, скелетон, race condition | средний |
 | 03 | useMemo для фильтрации/сортировки, тяжёлые вычисления | средний |
 | 04 | Разделение контекста + подписка на часть (useContextSelector) | продвинутый |
 | 05 | Code splitting (lazy + Suspense), прелоад по hover | продвинутый |
+| 10 | useTransition и useDeferredValue | senior |
+| 11 | Error Boundary и восстановление | senior |
+| 12 | useSyncExternalStore и внешний стор | senior |
+| 13 | Compound components и контекст (Tabs/Accordion) | senior |
 
 Запусти приложение, выбери задачу в списке и реализуй её по README в соответствующей папке.
