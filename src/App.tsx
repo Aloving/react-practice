@@ -16,6 +16,8 @@ const taskComponents: Record<TaskId, React.LazyExoticComponent<() => JSX.Element
   '11-error-boundary-recovery': lazy(() => import('./tasks/11-error-boundary-recovery/ErrorBoundaryDemo').then((m) => ({ default: m.ErrorBoundaryDemo }))),
   '12-use-sync-external-store': lazy(() => import('./tasks/12-use-sync-external-store/SyncExternalStoreDemo').then((m) => ({ default: m.SyncExternalStoreDemo }))),
   '13-compound-components': lazy(() => import('./tasks/13-compound-components/Tabs').then((m) => ({ default: m.Tabs }))),
+  '14-use-reducer': lazy(() => import('./tasks/14-use-reducer/StepperForm').then((m) => ({ default: m.StepperForm }))),
+  '15-portals': lazy(() => import('./tasks/15-portals/Modal').then((m) => ({ default: m.Modal }))),
 }
 
 function App() {

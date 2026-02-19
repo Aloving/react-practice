@@ -54,6 +54,18 @@ export const TASKS = [
     description: 'React.lazy + Suspense для маршрутов; прелоад следующего маршрута при hover на ссылку; измерить уменьшение начального бандла.',
   },
   {
+    id: '14-use-reducer',
+    title: 'useReducer и сложная логика состояния',
+    level: 'advanced',
+    description: 'Виджет с несколькими шагами (stepper/wizard) или state machine: useReducer для переходов, чистый reducer, предсказуемая логика. Пример: форма регистрации по шагам или корзина с этапами.',
+  },
+  {
+    id: '15-portals',
+    title: 'Portals — модалка и оверлей',
+    level: 'advanced',
+    description: 'Модальное окно через createPortal: рендер вне родительского DOM, оверлей, закрытие по Escape и клику вне, focus trap для доступности.',
+  },
+  {
     id: '10-transition-deferred',
     title: 'useTransition и useDeferredValue',
     level: 'senior',

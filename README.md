@@ -37,6 +37,8 @@ src/
     11-error-boundary-recovery/
     12-use-sync-external-store/
     13-compound-components/
+    14-use-reducer/
+    15-portals/
   test/           # setup для Vitest
   App.tsx
   main.tsx
@@ -47,7 +49,7 @@ src/
 - **README.md** — условие, подсказки, критерии приёмки
 - Компонент(ы) для реализации (заглушки уже есть)
 
-## Задачи (13 штук: базовый — senior)
+## Задачи (15 штук: базовый — senior)
 
 | № | Задача | Уровень |
 |---|--------|--------|
@@ -60,9 +62,13 @@ src/
 | 03 | useMemo для фильтрации/сортировки, тяжёлые вычисления | средний |
 | 04 | Разделение контекста + подписка на часть (useContextSelector) | продвинутый |
 | 05 | Code splitting (lazy + Suspense), прелоад по hover | продвинутый |
+| 14 | useReducer и сложная логика (stepper/wizard) | продвинутый |
+| 15 | Portals — модалка с оверлеем, Escape, focus trap | продвинутый |
 | 10 | useTransition и useDeferredValue | senior |
 | 11 | Error Boundary и восстановление | senior |
 | 12 | useSyncExternalStore и внешний стор | senior |
 | 13 | Compound components и контекст (Tabs/Accordion) | senior |
 
 Запусти приложение, выбери задачу в списке и реализуй её по README в соответствующей папке.
+
+Полный список профессиональных тем React и пропущенных тем (кандидаты на новые задачи) — в [docs/REACT_TOPICS.md](docs/REACT_TOPICS.md).
