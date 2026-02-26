@@ -35,6 +35,23 @@ body {
   color: #555;
 }
 
+.level-filter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.level-filter select {
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-size: inherit;
+  cursor: pointer;
+}
+
 .app-header code {
   background: #e8e8e8;
   padding: 0.2em 0.4em;
@@ -78,17 +95,11 @@ body {
   color: #0066cc;
 }
 
-.task-id {
+.task-number {
   font-family: monospace;
   color: #666;
-  font-size: 0.85em;
-}
-
-.task-level {
-  margin-left: auto;
-  font-size: 0.75rem;
-  color: #888;
-  text-transform: uppercase;
+  font-size: 0.9em;
+  flex-shrink: 0;
 }
 
 .task-desc {
