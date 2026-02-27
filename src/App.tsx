@@ -10,7 +10,7 @@ const LEVEL_LABELS: Record<LevelFilter, string> = {
   senior: 'Senior',
 }
 
-const taskComponents: Record<TaskId, React.LazyExoticComponent<() => JSX.Element>> = {
+const taskComponents: Record<TaskId, React.LazyExoticComponent<any>> = {
   '01-virtual-list': lazy(() => import('./tasks/01-virtual-list/VirtualList').then((m) => ({ default: m.VirtualList }))),
   '02-debounced-search': lazy(() => import('./tasks/02-debounced-search/DebouncedSearch').then((m) => ({ default: m.DebouncedSearch }))),
   '03-memo-selectors': lazy(() => import('./tasks/03-memo-selectors/FilteredList').then((m) => ({ default: m.FilteredList }))),
@@ -28,6 +28,8 @@ const taskComponents: Record<TaskId, React.LazyExoticComponent<() => JSX.Element
   '15-portals': lazy(() => import('./tasks/15-portals/Modal').then((m) => ({ default: m.Modal }))),
   '16-custom-hooks': lazy(() => import('./tasks/16-custom-hooks/CustomHooksDemo').then((m) => ({ default: m.CustomHooksDemo }))),
   '17-use-layout-effect': lazy(() => import('./tasks/17-use-layout-effect/PositionedTooltip').then((m) => ({ default: m.PositionedTooltip }))),
+  '18-optimistic-ui': lazy(() => import('./tasks/18-optimistic-ui/OptimisticList').then((m) => ({ default: m.OptimisticList }))),
+  '19-websocket-offline-queue': lazy(() => import('./tasks/19-websocket-offline-queue/RealtimeFeed').then((m) => ({ default: m.RealtimeFeed }))),
 }
 
 function App() {

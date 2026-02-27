@@ -16,6 +16,8 @@ export const TASKS = [
   { number: 15, id: '13-compound-components', title: 'Compound components и контекст', level: 'senior', description: 'Реализовать составной компонент (например, Tabs или Accordion): подкомпоненты связаны через контекст, гибкий API разметки, разделение ответственности без prop drilling.' },
   { number: 16, id: '16-custom-hooks', title: 'Custom Hooks: useLocalStorage, useDebounce, usePrevious', level: 'medium', description: 'Вынести логику в переиспользуемые хуки: синхронизация с localStorage, debounce значения, получение предыдущего значения. Применить useRef и useEffect.' },
   { number: 17, id: '17-use-layout-effect', title: 'useLayoutEffect и измерение DOM', level: 'medium', description: 'Тултип/dropdown с динамическим позиционированием: useLayoutEffect для измерений до paint, getBoundingClientRect, ResizeObserver. Избежать мерцания.' },
+  { number: 18, id: '18-optimistic-ui', title: 'Оптимистичное обновление и откат ошибок', level: 'medium', description: 'Optimistic UI для списка (лайки/задачи): мгновенное обновление, откат при ошибке, обработка конкурентных запросов.' },
+  { number: 19, id: '19-websocket-offline-queue', title: 'WebSocket и оффлайн‑очередь', level: 'advanced', description: 'Реал-тайм список через WebSocket, переподключение с экспоненциальной задержкой, очередь отправки сообщений при оффлайне.' },
 ] as const
 
 export type TaskId = (typeof TASKS)[number]['id']
